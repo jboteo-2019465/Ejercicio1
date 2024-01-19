@@ -3,14 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
     <title>Ahorcado</title>
+    
+    <link rel="stylesheet" type="text/css" href="./estilo.css">
 
 
 </head>
 <body>
     <center><h1>Ahorcado</h1></center>
-    <canvas id="canvas" width="350" height="350"></canvas>     
+    <center><canvas id="canvas" width="350" height="350" style="border: 1px solid red;"></canvas></center>
+    <script>
+        var canvas = document.getElementById("canvas");
+        const ctx = canvas.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(75, 75, 50, 0, Math.PI *2, true);
+        ctx.moveTo(300, 400);
+        ctx.stroke();
+    </script>
 
 
 
